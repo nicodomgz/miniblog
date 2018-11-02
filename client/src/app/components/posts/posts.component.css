@@ -1,0 +1,59 @@
+.postContainer{
+    margin-top: 10px;
+}
+
+.errPost{
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+    animation: cardAnim 0.6s;
+}
+
+.notPosts{
+    margin-top: 50px;
+    font-size: 20px;
+    animation: cardAnim 0.6s;
+}
+
+.notPosts p{
+    text-align: center;
+    color: rgb(97, 95, 95);
+}
+
+.shad{
+    box-shadow: 2px 2px 2px rgba(23, 162, 184, 0.4);
+}
+
+
+.card{
+    width: 18rem;
+    margin: 30px;
+    animation: cardAnim 0.6s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid #008ca1;
+    border-radius: 15px; 
+
+}
+
+.card-header{
+    height: 6rem;
+    font-weight: bold; 
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: white;
+    background: #008ca1;
+    text-align: center;
+}
+
+
+.card-body{
+    height: 16rem;
+    color: #008ca1;
+}
+
+@keyframes cardAnim {
+    
+    0%{opacity:0;transform:scale3d(.3,.3,.3)}
+    50%{opacity:1}
+}
+

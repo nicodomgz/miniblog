@@ -1,0 +1,15 @@
+<div class="notPosts d-flex flex-column" *ngIf='!err && count==0'>
+  <p>Oops! no post has been created yet.</p>
+  <button type="submit" class="btn btn-outline-info shad m-auto" routerLink='/admin/posts/create'>Create a new Post</button>
+</div>
+<div class="alert alert-danger flex-grow-1 errPost" role="alert"  *ngIf='err'>
+    An error occurred, try again later.
+</div> 
+<div class=" postContainer d-flex justify-content-center flex-wrap" *ngIf='!err'>
+    <div class="card bg-white" *ngFor="let post of posts" >
+      <div class="card-header">{{ post.title  }}</div>
+      <div class="card-body">
+        <p class="card-text"> {{ post.description }}</p>
+      </div>
+  </div>
+</div>
